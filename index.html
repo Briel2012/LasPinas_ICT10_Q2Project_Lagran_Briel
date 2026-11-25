@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Members</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f3f6f1;
+            color: #23352c;
+            font-family: "Rajdhani", sans-serif;
+        }
+        header, main, footer {
+            margin: 18px 0;
+            padding: 20px;
+            background: white;
+            border: 1px solid #dce5dc;
+            border-radius: 8px;
+        }
+        header { background: #e2eedf; }
+        h1, h2 { color: #315746; font-family: "Orbitron", sans-serif; }
+        nav { display: flex; flex-wrap: wrap; gap: 12px; }
+        a { color: #356c4c; }
+        input, button { margin: 5px 4px 5px 0; padding: 10px; font-size: 15px; }
+        button { cursor: pointer; }
+        blockquote {
+            margin-left: 0;
+            padding-left: 14px;
+            border-left: 3px solid #a5c77a;
+            color: #50694f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Q2 Webpages</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="element-checker.html">Element Checker</a>
+            <a href="school-club.html">School Club Members</a>
+            <a href="meet-creator.html">Meet the Creator</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>School Club Members</h2>
+        <p>Welcome to my ICT 10 second-quarter website! Enter your name to see if you are part of the basketball varsity.</p>
+
+        <input type="text" id="first_name" placeholder="Enter your first name">
+        <input type="text" id="last_name" placeholder="Enter your last name">
+        <button type="button" py-click="candidate_checker">Check Membership</button>
+        <p id="club_result">Your result will appear here.</p>
+
+        <h2>My Q2 projects</h2>
+        <ul>
+            <li><a href="element-checker.html">Skills Test - Element Checker</a></li>
+            <li><a href="school-club.html">Drill 2 - School Club Members</a></li>
+            <li><a href="meet-creator.html">Project - Meet the Creator</a></li>
+        </ul>
+    </main>
+    <script type="py" src="main.py"></script>
+</body>
+</html>

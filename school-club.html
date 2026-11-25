@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Members</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f3f6f1;
+            color: #23352c;
+            font-family: Arial, sans-serif;
+        }
+        header, main, footer {
+            margin: 18px 0;
+            padding: 20px;
+            background: white;
+            border: 1px solid #dce5dc;
+            border-radius: 8px;
+        }
+        header { background: #e2eedf; }
+        h1, h2 { color: #315746; }
+        nav { display: flex; flex-wrap: wrap; gap: 12px; }
+        a { color: #356c4c; }
+        input, button { margin: 5px 4px 5px 0; padding: 10px; font-size: 15px; }
+        button { cursor: pointer; }
+        blockquote {
+            margin-left: 0;
+            padding-left: 14px;
+            border-left: 3px solid #a5c77a;
+            color: #50694f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Q2 Webpages</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="element-checker.html">Element Checker</a>
+            <a href="school-club.html">School Club Members</a>
+            <a href="meet-creator.html">Meet the Creator</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Basketball Varsity Club</h2>
+        <p>Enter your first and last name to check if you are a member.</p>
+        <input type="text" id="first_name" placeholder="Enter your first name" autocomplete="given-name">
+        <input type="text" id="last_name" placeholder="Enter your last name" autocomplete="family-name">
+        <button type="button" py-click="candidate_checker">Check Membership</button>
+        <p id="club_result">result</p>
+    </main>
+
+    <footer><a href="index.html">Back to Home</a></footer>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
